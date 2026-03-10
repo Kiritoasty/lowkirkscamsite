@@ -28,64 +28,55 @@ body {
 </head>
 <body>
 <div class="topbar">
-  <!-- Left side: hamburger + YouTube logo -->
   <div class="topbar-left">
-    <!-- Hamburger -->
     <div class="hamburger">
       <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
         <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
       </svg>
     </div>
 
-    <!-- YouTube logo -->
     <div class="youtube-logo">
       <div class="logo-icon">YouTube</div>
     </div>
   </div>
 
-  <!-- Right side: guest icon -->
   <div class="guest-icon"></div>
 </div>
 
 <style>
-/* Make sure padding doesn't break width */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Topbar */
 .topbar {
     width: 100%;
     display: flex;
-    justify-content: space-between; /* left/right extremes */
+    justify-content: space-between; 
     align-items: center;
     padding: 0 16px;
     height: 60px;
     background-color: #121212;
 }
 
-/* Left side container */
 .topbar-left {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-/* Hamburger menu */
 .hamburger svg {
     width: 30px;
     height: 30px;
     cursor: pointer;
 }
 
-/* YouTube logo styling */
 .youtube-logo .logo-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #FF0000; /* YouTube red */
+    background-color: #FF0000; 
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -95,13 +86,12 @@ body {
     height: 28px;
 }
 
-/* Guest icon (YouTube-style circle) */
 .guest-icon {
     width: 36px;
     height: 36px;
     min-width: 36px;
     border-radius: 50%;
-    background-color: #999; /* gray circle */
+    background-color: #999;
     display: flex;
     align-items: center;
     justify-content: center;
